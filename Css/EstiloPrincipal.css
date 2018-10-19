@@ -3,10 +3,11 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: white;
+	font-size: 100%
 }
 header h1 {
 	font-size: 2.5em;
-	font-family: courier;
+	font-family: "Courier New";
 	font-weight: normal;
 	margin: 0;
 	padding: 15px 10px;
@@ -18,7 +19,7 @@ header nav ul{
 	background-color: #111;
 	overflow: hidden;
 	font-size: 1.5em;
-	font-family: courier;
+	font-family: "Courier New";
 }
 header nav li { 
 	float: left; 
@@ -55,11 +56,11 @@ main .ContenedorImagen a {
 	text-decoration: none;
 	display: block;
 	color: white;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 main .TextoImagen {
 	width: 100%;
-	font-family: Courier;
+	font-family: "Courier New";
 	/*border-style: solid;*/
 	background-color: black;
 	opacity: 0.65;
@@ -77,14 +78,17 @@ section {
 	margin: 0 auto;
 	position: relative;
 }
+section .ContenedorImagen {
+	font-size: 1.2em;
+}
 section header {
 	background-color: black
 }
 section header a {
 	width: 100%;
 	color: white;
-	font-family: Courier;
-	font-size: x-large;
+	font-family: "Courier New";
+	font-size: 1.5em;
 	text-decoration: none;
 }
 section header:hover {
@@ -93,14 +97,14 @@ section header:hover {
 .TextoImagen a {
 	text-decoration: none;
 	width: 100%;
-	font-family: Courier;
+	font-family: "Courier New";
 	color: white;
 	background-color: black;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
-.TextoImagen a:hover {
+.TextoImagen a:hover , section .ContenedorImagen:hover {
 	font-weight: bold;
 }
 
@@ -111,9 +115,15 @@ section header:hover {
 }
 #SeccionCriticas .ContenedorImagen {
 	position: relative;
-	padding: 10px 0px 0px 0px;
+	padding-top: 10px;
+	width: 49.5%;
+}
+#SeccionCriticas .ContenedorImagen#Derecha {
+	margin-right: 1%;
 	float: left;
-	width: 50%;
+}
+#SeccionCriticas .ContenedorImagen#Izquierda {
+	float: right;
 }
 #SeccionCriticas img {
 	width: 100%;
@@ -121,3 +131,4 @@ section header:hover {
 	display: block;
 }
   
+
