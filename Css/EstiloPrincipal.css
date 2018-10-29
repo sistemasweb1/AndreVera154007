@@ -84,6 +84,7 @@ section header {
 	background-color: black
 }
 section header a {
+	display: block;
 	width: 100%;
 	color: white;
 	font-family: "Courier New";

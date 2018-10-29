@@ -3,7 +3,8 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: white;
-	font-size: 100%
+	font-size: 100%;
+	font-family: "Courier New";
 }
 header h1 {
 	font-size: 2.5em;
@@ -38,9 +39,7 @@ header nav li a:hover{
 main {
 	margin: 0;
 	overflow: hidden;
-	/*height: 300px;*/
 }
-
 main .ContenedorImagen {
 	position: relative;
 	display: inline-block;
@@ -80,39 +79,111 @@ section {
 	margin: 0 auto;
 	position: relative;
 }
-section h1 {
+section header p {
 	font-family: "Courier New";
-	font-size: 3em;
 	text-align: justify;
+	width: 70%;
 	padding: 0;
 	margin: 0;
 }
 section header {
-	background-color: black
-}
-section header a {
-	width: 100%;
-	color: white;
 	font-family: "Courier New";
-	font-size: 1.5em;
-	text-decoration: none;
+	text-align: justify;
+	padding: 0;
+	margin: 0;
+	/*border: 2px solid red;*/
 }
-section header:hover {
-	font-weight: bold;
+section header h1 {
+	margin: 0;
+	padding: 0;
 }
 
+.ContenedorPrincipal {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 2px solid orange;
+}
 .ContenedorImagen {
-	width: 70%;
+	position: relative;
 }
-.ContenedorImagen img {
+.TextoImagen {
 	width: 100%;
-	height: 100%;
+	position: absolute;
+	color: white;
+	background: black;
+	bottom: 0;
+	left: 0;
 }
-section p {
+
+
+#Izquierda {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	/*border: 2px solid green;*/
+}
+#Izquierda img {
+	width: 100%;
+	display: block;
+}
+#Izquierda h2 {
 	font-family: "Courier New";
-	font-size: 1em;
 	text-align: justify;
-	width: 70%;
+	border-bottom: 3px solid black;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	margin: 0;
+}
+#Izquierda .TextoImagen p {
+	width: 100%;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+.Parrafo1 {
+	width: 100%;
+	padding-top: 5px;
+	margin: 0;
+	text-align: justify;
+	font-size: 1.2em;
+	line-height: 140%;
+}
+.Parrafo {
+	width: 100%;
+	margin: 0;
+	text-align: justify;
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+#Derecha {
+	display: flex;
+	padding-right: 2.5%;
+	flex-direction: column;
+	width: 30%;
+	/*border: 2px solid red;*/
+}
+#Derecha .ContenedorImagen {
+	margin-bottom: 5%;
+}
+#Derecha img {
+	width: 100%;
+	display: block;
+}
+#Derecha header p {
+	width: 100%;
+	color: white;
+	background-color: black;
+	margin-bottom: 5%;
+}
+#Derecha p {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: .8em;
 }
 
 footer {
