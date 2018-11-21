@@ -98,7 +98,6 @@ section header h1 {
 	padding: 0;
 	text-align: center;
 	border-bottom: 4px solid black;
-	margin-bottom: 10px;
 }
 
 .ContenedorPrincipal {
@@ -106,10 +105,13 @@ section header h1 {
 	align-items: flex-start;
 	flex-direction: row;
 	justify-content: space-between;
+
 	/*border: 2px solid orange;*/
 }
 .ContenedorImagen {
 	position: relative;
+	width: 100%;
+	/*border: 2px solid blue;*/
 }
 .TextoImagen {
 	width: 100%;
@@ -128,16 +130,21 @@ section header h1 {
 	/*border: 2px solid green;*/
 }
 #Izquierda img {
-	width: 100%;
+	height: 500px;
 	display: block;
 }
 #Izquierda h2 {
 	font-family: "Courier New";
 	text-align: center;
-	border-bottom: 2px solid black;
+	/*border-bottom: 3px solid black;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 0;
+}
+#Izquierda .ContenedorImagen {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 #Izquierda .TextoImagen p {
 	width: 100%;
@@ -145,6 +152,13 @@ section header h1 {
 	padding: 0;
 	margin: 0;
 	font-size: 1em;
+}
+#Izquierda .ContenedorTabla  {
+	width: 100%;
+	padding-left: 10px;
+}
+#Izquierda .Critica {
+	
 }
 .Parrafo1 {
 	width: 100%;
@@ -154,9 +168,11 @@ section header h1 {
 	font-size: 1.2em;
 	line-height: 140%;
 }
-.Parrafo {
+.Critica p {
+	border-top: 2px solid black;
+	padding-top: 10px;
 	width: 100%;
-	margin: 0;
+	margin-top: 15px;
 	text-align: justify;
 	font-size: 1.2em;
 	line-height: 140%;
